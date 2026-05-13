@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>City of Troy, Michigan — Library Funding Analysis (FY2000–FY2025)</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #5b6470;
+    --rule: #d8dde3;
+    --accent: #1f4e7a;
+    --bg: #fafbfc;
+    --highlight: #f3f6fa;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  .wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 48px 28px 80px;
+  }
+  header.page {
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+  header.page .eyebrow {
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+    color: var(--ink);
+  }
+  header.page .subtitle {
+    color: var(--muted);
+    margin: 0;
+    font-size: 17px;
+  }
+  h2 {
+    margin: 48px 0 12px;
+    font-size: 22px;
+    color: var(--accent);
+  }
+  h3 {
+    margin: 28px 0 8px;
+    font-size: 17px;
+  }
+  p { margin: 0 0 14px; }
+  a { color: var(--accent); }
+  a:hover { text-decoration: underline; }
+  .callout {
+    background: var(--highlight);
+    border-left: 3px solid var(--accent);
+    padding: 14px 18px;
+    margin: 18px 0;
+    border-radius: 0 4px 4px 0;
+    font-size: 15px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 24px;
+    font-size: 14px;
+  }
+  th, td {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--rule);
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: var(--highlight);
+    font-weight: 600;
+    color: var(--ink);
+  }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  td.note { color: var(--muted); font-size: 13px; }
+  caption {
+    text-align: left;
+    color: var(--muted);
+    font-size: 13px;
+    padding-bottom: 6px;
+    caption-side: top;
+  }
+  .legend {
+    color: var(--muted);
+    font-size: 13px;
+    margin: -8px 0 18px;
+  }
+  .era {
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 18px 20px;
+    margin: 16px 0;
+    background: #fff;
+  }
+  .era h3 { margin-top: 0; }
+  .pill {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: var(--highlight);
+    color: var(--accent);
+    font-size: 12px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  ul.report-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 6px;
+  }
+  ul.report-grid li {
+    margin: 0;
+  }
+  ul.report-grid a {
+    display: block;
+    padding: 8px 12px;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 14px;
+    background: #fff;
+  }
+  ul.report-grid a:hover {
+    border-color: var(--accent);
+    background: var(--highlight);
+  }
+  ul.report-grid a .yr { font-weight: 600; color: var(--accent); }
+  ul.report-grid a.external::after {
+    content: " ↗";
+    color: var(--muted);
+    font-size: 12px;
+  }
+  ul.report-grid a small {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  footer.page {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 13px;
+  }
+  footer.page p { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<header class="page">
+  <p class="eyebrow">City of Troy, Michigan</p>
+  <h1>Public Library Funding Analysis, FY2000 – FY2025</h1>
+  <p class="subtitle">Revenue, operating expenditures, and capital spending as reported in the City's Comprehensive / Annual Comprehensive Financial Reports.</p>
+</header>
+
+<section>
+  <h2>Overview</h2>
+  <p>The City of Troy reports its public library finances differently in three
+  distinct eras. This page summarizes where library figures live in each ACFR,
+  reproduces the year-by-year totals from FY2000 through FY2025, and answers
+  the question of whether the City breaks library spending into operating vs.
+  capital expense.</p>
+
+  <div class="callout">
+    <strong>Where Library figures live:</strong>
+    <br>FY2000 – FY2011: line item inside the <em>General Fund</em> (under Culture &amp; Recreation), titled <em>Library</em> or <em>Library and museum</em>.
+    <br>FY2012 – FY2025: dedicated <em>Library Fund</em> (special revenue fund) backed by a voter-approved millage. Each ACFR contains a standalone <em>Budgetary Comparison Schedule – Library Fund</em>.
+  </div>
+</section>
+
+<section>
+  <h2>Library Fund — revenue and spending by fiscal year</h2>
+  <p class="legend">All figures are <em>actual</em> (not budget). Dollars. "Transfers out" is the Library Fund's contribution to the Capital Projects Fund, which the City uses to acquire collections and fund library facility work.</p>
+
+  <table>
+    <caption>Library revenue and expenditures, FY2010 – FY2025</caption>
+    <thead>
+      <tr>
+        <th>FY</th>
+        <th>Reporting fund</th>
+        <th class="num">Total revenue</th>
+        <th class="num">Operating expenditures<br><small>("Recreation &amp; culture")</small></th>
+        <th class="num">Transfers out<br><small>→ Capital Projects Fund</small></th>
+        <th>ACFR page</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>2010</td><td>General Fund (line item)</td><td class="num note">— pooled —</td><td class="num">3,905,927</td><td class="num">—</td><td>p. 17</td></tr>
+      <tr><td>2011</td><td>General Fund (line item)</td><td class="num note">— pooled —</td><td class="num">2,288,355</td><td class="num">—</td><td>scanned (OCR)</td></tr>
+      <tr><td>2012</td><td><strong>Library Fund</strong></td><td class="num">3,355,935</td><td class="num">2,135,100</td><td class="num">467,911</td><td>p. 96</td></tr>
+      <tr><td>2013</td><td>Library Fund</td><td class="num">3,295,993</td><td class="num">2,266,410</td><td class="num">590,556</td><td>p. 99</td></tr>
+      <tr><td>2014</td><td>Library Fund</td><td class="num">3,338,997</td><td class="num">2,436,972</td><td class="num">638,751</td><td>p. 108</td></tr>
+      <tr><td>2015</td><td>Library Fund</td><td class="num">3,441,898</td><td class="num">2,663,090</td><td class="num">776,218</td><td>p. 111</td></tr>
+      <tr><td>2016</td><td>Library Fund</td><td class="num">3,487,221</td><td class="num">2,729,910</td><td class="num">748,970</td><td>p. 114</td></tr>
+      <tr><td>2017</td><td>Library Fund</td><td class="num">3,466,434</td><td class="num">2,866,410</td><td class="num">806,363</td><td>p. 116</td></tr>
+      <tr><td>2018</td><td>Library Fund</td><td class="num">3,550,377</td><td class="num">2,957,814</td><td class="num">773,912</td><td>p. 119</td></tr>
+      <tr><td>2019</td><td>Library Fund</td><td class="num">3,657,318</td><td class="num">3,192,416</td><td class="num">917,827</td><td>p. 124</td></tr>
+      <tr><td>2020</td><td>Library Fund</td><td class="num">3,752,734</td><td class="num">3,114,340</td><td class="num">595,000</td><td>p. 125</td></tr>
+      <tr><td>2021</td><td>Library Fund</td><td class="num">3,762,700</td><td class="num">3,294,231</td><td class="num">611,369</td><td>p. 125</td></tr>
+      <tr><td>2022</td><td>Library Fund</td><td class="num">6,011,656</td><td class="num">3,960,758</td><td class="num">932,890</td><td>p. 124</td></tr>
+      <tr><td>2023</td><td>Library Fund</td><td class="num">6,509,570</td><td class="num">4,432,739</td><td class="num">904,545</td><td>p. 97</td></tr>
+      <tr><td>2024</td><td>Library Fund</td><td class="num">7,211,588</td><td class="num">5,247,367</td><td class="num">1,093,529</td><td>p. 93</td></tr>
+      <tr><td>2025</td><td>Library Fund</td><td class="num">7,753,540</td><td class="num">6,067,487</td><td class="num">1,159,339</td><td>p. 92</td></tr>
+    </tbody>
+  </table>
+
+  <p>Property taxes are the dominant revenue source every year (~90%+ once
+  the Library Fund exists). The remainder is State aid, library fines and fees,
+  charges for services, and investment earnings. The step-up in FY2022 reflects
+  a renewed/expanded library millage — Library Fund property tax revenue jumps
+  from $3.5 M (FY2021) to $5.85 M (FY2022).</p>
+</section>
+
+<section>
+  <h2>Is Library spending broken into CapEx vs. OpEx?</h2>
+  <p>Not on a single page. The presentation depends on the era:</p>
+
+  <div class="era">
+    <h3>Era 1 — FY2000 to FY2002 <span class="pill">explicit Library CapEx line</span></h3>
+    <p>The Capital Projects Fund's <em>Statement of Revenues, Expenditures and Changes in Fund Balance — Budget and Actual</em> breaks capital expenditures out by function, and one of those functions is <strong>"Library and museum."</strong> This is the only era where you can read library CapEx straight off a single page.</p>
+    <table>
+      <thead>
+        <tr><th>FY</th><th class="num">Library &amp; Museum CapEx (actual)</th><th class="num">Budget</th><th>Source</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2000</td><td class="num">533,940</td><td class="num">976,856</td><td>CAFR p. 91 (Capital Projects Fund)</td></tr>
+        <tr><td>2001</td><td class="num">337,276</td><td class="num">659,440</td><td>CAFR p. 91</td></tr>
+        <tr><td>2002</td><td class="num">903,739</td><td class="num">1,556,733</td><td>CAFR p. 95</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="era">
+    <h3>Era 2 — FY2003 to FY2011 <span class="pill">CapEx aggregated</span></h3>
+    <p>Starting FY2003, the Capital Projects Fund's budgetary schedule collapses all function-level capital lines into a single <strong>"Capital outlay"</strong> line — likely tied to GASB 34 implementation. Library CapEx is no longer separately visible at the fund level. However, library book acquisitions continue and are visible in the <em>capital assets footnote</em> (Notes to Financial Statements) as the dedicated line <strong>"Library books / audio-visual."</strong></p>
+    <table>
+      <caption>Library book / AV additions (capitalized, from capital-asset rollforward)</caption>
+      <thead>
+        <tr><th>FY</th><th class="num">Library book additions</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2003</td><td class="num">417,419</td></tr>
+        <tr><td>2004</td><td class="num">735,040</td></tr>
+        <tr><td>2005</td><td class="num">734,289</td></tr>
+        <tr><td>2006</td><td class="num">740,014</td></tr>
+        <tr><td>2007</td><td class="num">707,456</td></tr>
+        <tr><td>2008</td><td class="num">732,107</td></tr>
+        <tr><td>2009</td><td class="num">739,872</td></tr>
+        <tr><td>2010</td><td class="num">709,227</td></tr>
+        <tr><td>2011</td><td class="num">296,778</td></tr>
+      </tbody>
+    </table>
+    <p>These purchases were expensed at the fund level inside the General Fund's <em>Library and museum</em> operating budget and capitalized at the government-wide level. They <strong>did not</strong> flow through the Capital Projects Fund during this era.</p>
+  </div>
+
+  <div class="era">
+    <h3>Era 3 — FY2012 onward <span class="pill">CapEx via transfers to Capital Projects Fund</span></h3>
+    <p>After the dedicated library millage created the Library Fund in FY2012, library CapEx is once again routed through the Capital Projects Fund, but now via <em>Transfers Out</em> from the Library Fund (the rightmost column of the table at the top of this page — $468 K to $1.16 M per year). Big projects (e.g., FY2020 library roof replacement, ~$1.2 M; FY2023–25 renovations) and ongoing collection purchases use this conduit.</p>
+  </div>
+
+  <p><strong>Within the Library Fund schedule itself, expenditures are reported as a single "Current — Recreation and culture" line.</strong> That is the operating budget (staff, materials, utilities, programs). There is no separate "Capital outlay" line inside the Library Fund. To reconstruct a CapEx vs. OpEx view, add the Library Fund's operating expenditures (OpEx) and its Transfers Out to Capital Projects (CapEx proxy).</p>
+</section>
+
+<section>
+  <h2>Pattern: where did Library CapEx flow, decade by decade?</h2>
+  <table>
+    <thead>
+      <tr><th>Era</th><th>Years</th><th>Library CapEx routing</th><th>Visibility in ACFR</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>FY2000 – FY2002</td>
+        <td>Capital Projects Fund, dedicated "Library and museum" line</td>
+        <td>Direct, single-page</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>FY2003 – FY2011</td>
+        <td>General Fund operating budget (books); large facility work buried in aggregated Capital Projects Fund "Capital outlay"</td>
+        <td>Only via capital-asset footnote</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>FY2012 – present</td>
+        <td>Library Fund → Transfers Out → Capital Projects Fund</td>
+        <td>Library Fund's Transfers Out column</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Source documents</h2>
+  <p>All CAFRs / ACFRs as published by the City of Troy, MI. Files are mirrored in this repo where size permits; the three oversized scanned PDFs (FY2000 – FY2002, 33–34 MB each) link to the City's CMS.</p>
+
+  <h3>FY2000s</h3>
+  <ul class="report-grid">
+    <li><a class="external" href="https://cms6.revize.com/revize/citytroymi/2000%20CAFR.pdf"><span class="yr">FY2000</span><small>CAFR · 34 MB · City CMS</small></a></li>
+    <li><a class="external" href="https://cms6.revize.com/revize/citytroymi/2001%20CAFR.pdf"><span class="yr">FY2001</span><small>CAFR · 33 MB · City CMS</small></a></li>
+    <li><a class="external" href="https://cms6.revize.com/revize/citytroymi/2002%20CAFR.pdf"><span class="yr">FY2002</span><small>CAFR · 34 MB · City CMS</small></a></li>
+    <li><a href="reports/CAFR_2003.pdf"><span class="yr">FY2003</span><small>CAFR</small></a></li>
+    <li><a href="reports/CAFR_2004.pdf"><span class="yr">FY2004</span><small>CAFR</small></a></li>
+    <li><a href="reports/CAFR_2005.pdf"><span class="yr">FY2005</span><small>CAFR</small></a></li>
+    <li><a href="reports/CAFR_2006.pdf"><span class="yr">FY2006</span><small>CAFR</small></a></li>
+    <li><a href="reports/CAFR_2007.pdf"><span class="yr">FY2007</span><small>CAFR</small></a></li>
+    <li><a href="reports/ACFR_2008.pdf"><span class="yr">FY2008</span><small>ACFR</small></a></li>
+    <li><a href="reports/ACFR_2009.pdf"><span class="yr">FY2009</span><small>ACFR</small></a></li>
+  </ul>
+
+  <h3>FY2010s</h3>
+  <ul class="report-grid">
+    <li><a href="reports/ACFR_2010.pdf"><span class="yr">FY2010</span><small>ACFR</small></a></li>
+    <li><a href="reports/ACFR_2011.pdf"><span class="yr">FY2011</span><small>ACFR · scanned</small></a></li>
+    <li><a href="reports/ACFR_2012.pdf"><span class="yr">FY2012</span><small>ACFR</small></a></li>
+    <li><a href="reports/ACFR_2013.pdf"><span class="yr">FY2013</span><small>ACFR</small></a></li>
+    <li><a href="reports/ACFR_2014.pdf"><span class="yr">FY2014</span><small>ACFR</small></a></li>
+    <li><a href="reports/ACFR_2015.pdf"><span class="yr">FY2015</span><small>ACFR</small></a></li>
+    <li><a href="reports/ACFR_2016.pdf"><span class="yr">FY2016</span><small>ACFR</small></a></li>
+    <li><a href="reports/ACFR_2017.pdf"><span class="yr">FY2017</span><small>ACFR</small></a></li>
+    <li><a href="reports/ACFR_2018.pdf"><span class="yr">FY2018</span><small>ACFR</small></a></li>
+    <li><a href="reports/ACFR_2019.pdf"><span class="yr">FY2019</span><small>ACFR</small></a></li>
+  </ul>
+
+  <h3>FY2020s</h3>
+  <ul class="report-grid">
+    <li><a href="reports/ACFR_2020.pdf"><span class="yr">FY2020</span><small>ACFR</small></a></li>
+    <li><a href="reports/ACFR_2021.pdf"><span class="yr">FY2021</span><small>ACFR</small></a></li>
+    <li><a href="reports/ACFR_2022.pdf"><span class="yr">FY2022</span><small>ACFR</small></a></li>
+    <li><a href="reports/ACFR_2023.pdf"><span class="yr">FY2023</span><small>ACFR</small></a></li>
+    <li><a href="reports/ACFR_2024.pdf"><span class="yr">FY2024</span><small>ACFR</small></a></li>
+    <li><a href="reports/ACFR_2025.pdf"><span class="yr">FY2025</span><small>ACFR</small></a></li>
+  </ul>
+</section>
+
+<footer class="page">
+  <p>Source: <a href="https://troymi.gov/departments/city_manager/financial_services/financial_documents.php">City of Troy, MI — Financial Services / Financial Documents</a>.</p>
+  <p>Analysis prepared from text extraction of the published CAFRs / ACFRs. FY2011 ACFR is a scanned PDF; figures from that year were extracted via OCR. All other figures were read directly from machine-readable PDFs and cross-checked against page numbers cited above.</p>
+</footer>
+
+</main>
+</body>
+</html>

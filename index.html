@@ -88,6 +88,8 @@
   }
   td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
   td.note { color: var(--muted); font-size: 13px; }
+  small.pct { color: var(--muted); font-size: 12px; font-weight: 400; }
+  tr.totals td { background: var(--highlight); border-top: 2px solid var(--accent); }
   caption {
     text-align: left;
     color: var(--muted);
@@ -191,7 +193,7 @@
 
 <section>
   <h2>Library Fund — revenue and spending by fiscal year</h2>
-  <p class="legend">All figures are <em>actual</em> (not budget). Dollars. "Transfers out" is the Library Fund's contribution to the Capital Projects Fund, which the City uses to acquire collections and fund library facility work.</p>
+  <p class="legend">All figures are <em>actual</em> (not budget). Dollars. "Transfers out" is the Library Fund's contribution to the Capital Projects Fund, which the City uses to acquire collections and fund library facility work. Percentages under each value show that cell's share of its column total.</p>
 
   <table>
     <caption>Library revenue and expenditures, FY2010 – FY2025</caption>
@@ -206,24 +208,27 @@
       </tr>
     </thead>
     <tbody>
-      <tr><td>2010</td><td>General Fund (line item)</td><td class="num note">— pooled —</td><td class="num">3,905,927</td><td class="num">—</td><td>p. 17</td></tr>
-      <tr><td>2011</td><td>General Fund (line item)</td><td class="num note">— pooled —</td><td class="num">2,288,355</td><td class="num">—</td><td>scanned (OCR)</td></tr>
-      <tr><td>2012</td><td><strong>Library Fund</strong></td><td class="num">3,355,935</td><td class="num">2,135,100</td><td class="num">467,911</td><td>p. 96</td></tr>
-      <tr><td>2013</td><td>Library Fund</td><td class="num">3,295,993</td><td class="num">2,266,410</td><td class="num">590,556</td><td>p. 99</td></tr>
-      <tr><td>2014</td><td>Library Fund</td><td class="num">3,338,997</td><td class="num">2,436,972</td><td class="num">638,751</td><td>p. 108</td></tr>
-      <tr><td>2015</td><td>Library Fund</td><td class="num">3,441,898</td><td class="num">2,663,090</td><td class="num">776,218</td><td>p. 111</td></tr>
-      <tr><td>2016</td><td>Library Fund</td><td class="num">3,487,221</td><td class="num">2,729,910</td><td class="num">748,970</td><td>p. 114</td></tr>
-      <tr><td>2017</td><td>Library Fund</td><td class="num">3,466,434</td><td class="num">2,866,410</td><td class="num">806,363</td><td>p. 116</td></tr>
-      <tr><td>2018</td><td>Library Fund</td><td class="num">3,550,377</td><td class="num">2,957,814</td><td class="num">773,912</td><td>p. 119</td></tr>
-      <tr><td>2019</td><td>Library Fund</td><td class="num">3,657,318</td><td class="num">3,192,416</td><td class="num">917,827</td><td>p. 124</td></tr>
-      <tr><td>2020</td><td>Library Fund</td><td class="num">3,752,734</td><td class="num">3,114,340</td><td class="num">595,000</td><td>p. 125</td></tr>
-      <tr><td>2021</td><td>Library Fund</td><td class="num">3,762,700</td><td class="num">3,294,231</td><td class="num">611,369</td><td>p. 125</td></tr>
-      <tr><td>2022</td><td>Library Fund</td><td class="num">6,011,656</td><td class="num">3,960,758</td><td class="num">932,890</td><td>p. 124</td></tr>
-      <tr><td>2023</td><td>Library Fund</td><td class="num">6,509,570</td><td class="num">4,432,739</td><td class="num">904,545</td><td>p. 97</td></tr>
-      <tr><td>2024</td><td>Library Fund</td><td class="num">7,211,588</td><td class="num">5,247,367</td><td class="num">1,093,529</td><td>p. 93</td></tr>
-      <tr><td>2025</td><td>Library Fund</td><td class="num">7,753,540</td><td class="num">6,067,487</td><td class="num">1,159,339</td><td>p. 92</td></tr>
+      <tr><td>2010</td><td>General Fund (line item)</td><td class="num note">— pooled —</td><td class="num">3,905,927<br><small class="pct">7.3%</small></td><td class="num">—</td><td>p. 17</td></tr>
+      <tr><td>2011</td><td>General Fund (line item)</td><td class="num note">— pooled —</td><td class="num">2,288,355<br><small class="pct">4.3%</small></td><td class="num">—</td><td>scanned (OCR)</td></tr>
+      <tr><td>2012</td><td><strong>Library Fund</strong></td><td class="num">3,355,935<br><small class="pct">5.4%</small></td><td class="num">2,135,100<br><small class="pct">4.0%</small></td><td class="num">467,911<br><small class="pct">4.2%</small></td><td>p. 96</td></tr>
+      <tr><td>2013</td><td>Library Fund</td><td class="num">3,295,993<br><small class="pct">5.3%</small></td><td class="num">2,266,410<br><small class="pct">4.2%</small></td><td class="num">590,556<br><small class="pct">5.4%</small></td><td>p. 99</td></tr>
+      <tr><td>2014</td><td>Library Fund</td><td class="num">3,338,997<br><small class="pct">5.3%</small></td><td class="num">2,436,972<br><small class="pct">4.6%</small></td><td class="num">638,751<br><small class="pct">5.8%</small></td><td>p. 108</td></tr>
+      <tr><td>2015</td><td>Library Fund</td><td class="num">3,441,898<br><small class="pct">5.5%</small></td><td class="num">2,663,090<br><small class="pct">5.0%</small></td><td class="num">776,218<br><small class="pct">7.0%</small></td><td>p. 111</td></tr>
+      <tr><td>2016</td><td>Library Fund</td><td class="num">3,487,221<br><small class="pct">5.6%</small></td><td class="num">2,729,910<br><small class="pct">5.1%</small></td><td class="num">748,970<br><small class="pct">6.8%</small></td><td>p. 114</td></tr>
+      <tr><td>2017</td><td>Library Fund</td><td class="num">3,466,434<br><small class="pct">5.5%</small></td><td class="num">2,866,410<br><small class="pct">5.4%</small></td><td class="num">806,363<br><small class="pct">7.3%</small></td><td>p. 116</td></tr>
+      <tr><td>2018</td><td>Library Fund</td><td class="num">3,550,377<br><small class="pct">5.7%</small></td><td class="num">2,957,814<br><small class="pct">5.5%</small></td><td class="num">773,912<br><small class="pct">7.0%</small></td><td>p. 119</td></tr>
+      <tr><td>2019</td><td>Library Fund</td><td class="num">3,657,318<br><small class="pct">5.8%</small></td><td class="num">3,192,416<br><small class="pct">6.0%</small></td><td class="num">917,827<br><small class="pct">8.3%</small></td><td>p. 124</td></tr>
+      <tr><td>2020</td><td>Library Fund</td><td class="num">3,752,734<br><small class="pct">6.0%</small></td><td class="num">3,114,340<br><small class="pct">5.8%</small></td><td class="num">595,000<br><small class="pct">5.4%</small></td><td>p. 125</td></tr>
+      <tr><td>2021</td><td>Library Fund</td><td class="num">3,762,700<br><small class="pct">6.0%</small></td><td class="num">3,294,231<br><small class="pct">6.2%</small></td><td class="num">611,369<br><small class="pct">5.5%</small></td><td>p. 125</td></tr>
+      <tr><td>2022</td><td>Library Fund</td><td class="num">6,011,656<br><small class="pct">9.6%</small></td><td class="num">3,960,758<br><small class="pct">7.4%</small></td><td class="num">932,890<br><small class="pct">8.5%</small></td><td>p. 124</td></tr>
+      <tr><td>2023</td><td>Library Fund</td><td class="num">6,509,570<br><small class="pct">10.4%</small></td><td class="num">4,432,739<br><small class="pct">8.3%</small></td><td class="num">904,545<br><small class="pct">8.2%</small></td><td>p. 97</td></tr>
+      <tr><td>2024</td><td>Library Fund</td><td class="num">7,211,588<br><small class="pct">11.5%</small></td><td class="num">5,247,367<br><small class="pct">9.8%</small></td><td class="num">1,093,529<br><small class="pct">9.9%</small></td><td>p. 93</td></tr>
+      <tr><td>2025</td><td>Library Fund</td><td class="num">7,753,540<br><small class="pct">12.4%</small></td><td class="num">6,067,487<br><small class="pct">11.3%</small></td><td class="num">1,159,339<br><small class="pct">10.5%</small></td><td>p. 92</td></tr>
+      <tr class="totals"><td><strong>Total</strong></td><td><em>14 yrs rev<br>16 yrs opex</em></td><td class="num"><strong>62,595,961</strong><br><small class="pct">100%</small></td><td class="num"><strong>53,559,326</strong><br><small class="pct">100%</small></td><td class="num"><strong>11,017,180</strong><br><small class="pct">100%</small></td><td>&nbsp;</td></tr>
     </tbody>
   </table>
+
+  <p class="legend"><strong>Reading the percentages:</strong> Revenue and Transfers Out columns are summed over the 14 years the Library Fund has existed (FY2012 – FY2025). Operating expenditures are summed over all 16 years shown — FY2010 and FY2011 are the General Fund "Library and museum" line; FY2012 onward is the Library Fund "Recreation and culture" line. So OpEx percentages and the revenue/transfer percentages have different denominators by row count, but each column percentage shows that year's share of the total presented in that column.</p>
 
   <p>Property taxes are the dominant revenue source every year (~90%+ once
   the Library Fund exists). The remainder is State aid, library fines and fees,
